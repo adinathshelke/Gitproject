@@ -8,7 +8,7 @@ pipeline {
 		 stages{
 		 stage ("create container "){
 		          steps {
-				  sh "docker run --name container1 -itdp 70:80 httpd"
+				  sh "docker run --name container2 -itdp 70:80 httpd"
 				  }
 		            }
 					stage ('deploy index') {
