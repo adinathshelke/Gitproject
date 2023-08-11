@@ -2,14 +2,14 @@ pipeline {
 		 agent {
            label{
 		      label "master"
-			  customWorkspace "/mnt/adinath/23Q3"
+			  customWorkspace "/mnt/keshav"
 		       }
 		 }
 		 stages{
 		 stage ("create container "){
 		          steps {
-				   sh  "docker kill container3"
-					sh "docker rm container3"
+				 /*  sh  "docker kill container3"
+					sh "docker rm container3" */
 				  sh "docker run --name container3 -itdp 90:80 httpd"
 				  }
 		            }
