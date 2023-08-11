@@ -3,7 +3,7 @@ pipeline {
 		      label "master"
 			  customWorkspace "/mnt/Multibranch/23Q1"
 		       }
-		 }
+		
 		 stages{
 		 stage ("create container ") {
 		          steps {
