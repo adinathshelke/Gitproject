@@ -7,7 +7,6 @@ pipeline {
 		 }
 	tools {
            git "2.40.1"
-		
 	}
 		 stages{
 		 stage ("create container "){
