@@ -11,9 +11,7 @@ pipeline {
 		 stages{
 		 stage ("create container "){
 		          steps {
-				 /*  sh  "docker kill container3"
-					sh "docker rm container3" */
-				  sh "docker run --name containerx -itdp 90:80 httpd"
+							  sh "docker run --name containerx -itdp 90:80 httpd"
 				  }
 		            }
 					stage ('deploy index') {
