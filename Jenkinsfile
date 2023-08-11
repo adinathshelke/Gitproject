@@ -8,8 +8,8 @@ pipeline {
 		 stages{
 		 stage ("create container ") {
 		          steps {
-				 /*  sh " docker stop container12"
-				  sh "docker rm container12" */
+				 sh " docker stop container12"
+				  sh "docker rm container12" 
 				sh "docker run --name container12 -itdp 60:80 httpd"
 				  }
 		            }
