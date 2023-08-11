@@ -2,7 +2,7 @@ pipeline {
 		 agent {
            label{
 		      label "master"
-			  customWorkspace "/mnt/Multibranch/23Q3"
+			  customWorkspace "/mnt/adinath/23Q3"
 		       }
 		 }
 		 stages{
